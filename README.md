@@ -1,7 +1,7 @@
 # Readme File for the Getting and Cleaning Course Project
 
 ##Prerequisites.
-- the data for the analysis has been downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
+- the data for the analysis has been downloaded from [here] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)  
 
 - the R script asumes that the data has been extracted in the working directory and that the original structure of files and folders is maintained:  
       Working directory: activity_labels.txt, features_info.txt, features.txt, and README.txt    

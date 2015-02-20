@@ -1,5 +1,5 @@
 # by Marc
-# Last modified: 18.02.2015
+# Last modified: 20.02.2015
 
 # Load needed packages
 library(dplyr)
@@ -42,10 +42,10 @@ colnames(dataTrain) <- labelsVariables
 dataAll <- rbind(dataTest, dataTrain)
 
 # Remove duplicated columns
-dataAll <- dataAll[, !duplicate(colnames(dataAll))]
+dataAll <- dataAll[, !duplicated(colnames(dataAll))]
 
 # Localize the variable subject and activity and the ones whose names contain mean and std
-selected <- c(1, 2, grep("mean()|std()|!meanFreq", names(dataAll)))
+selected <- c(1, 2, grep("mean|std", names(dataAll)))
 
 # Select the variables from the data table that need to be analyzed
 dataAll <- dataAll[, selected]

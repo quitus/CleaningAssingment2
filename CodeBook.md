@@ -11,7 +11,9 @@
 - a new vector containing the location of the variables Subject, Activity and any other variable that contains "mean" or "std" in the name is created and is used to select these variables from the data matrix **(Question 2)**
 - labels for the variable Activity are applied **(Question 3)**
 - the data is sorted by the Subject (ascending) and Activity (descending)
-- a csv file called dataTidy.txt is created in the working directory that contains the average of each variable for each Activity and Subject **(Question 5)**  
+- a csv file called dataTidy.txt is created in the working directory that contains the average of each variable for each Activity and Subject **(Question 5)*   
+
+----
 
 ## Variables
 **All the variables are presented as the mean value for teh specific Subject and Activity**  
@@ -40,22 +42,22 @@
 - tBodyGyroJerkMag.std..: Standard deviation of the Euclidean norm of the Body Angular Acceleration derived in time
 - fBodyAcc.mean...X, fBodyAcc.mean...Y, and fBodyAcc.mean...Z: Mean of the Fast Fourier Transform of the Body Linear Acceleration on the X, Y, and Z axis
 - fBodyAcc.std...X, fBodyAcc.std...Y, and fBodyAcc.std...Z: Standard deviation of the Fast Fourier Transform of the Body Linear Acceleration on the X, Y, and Z axis
-- fBodyAcc.meanFreq...X, fBodyAcc.meanFreq...Y, and fBodyAcc.meanFreq...Z: 
+- fBodyAcc.meanFreq...X, fBodyAcc.meanFreq...Y, and fBodyAcc.meanFreq...Z: Mean frequency of the Fast Fourier Transform of the Body Linear Acceleration on the X, Y, and Z axis
 - fBodyAccJerk.mean...X, fBodyAccJerk.mean...Y, and fBodyAccJerk.mean...Z: Mean of Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration derived in time on the X, Y, and Z axis
 - fBodyAccJerk.std...X, fBodyAccJerk.std...Y, and fBodyAccJerk.std...Z: Standard deviation Fast Fourier Transform of the Fast Fourier Transform of Euclidean norm of the Body Linear Acceleration derived in time on the X, Y, and Z axis
-- fBodyAccJerk.meanFreq...X, fBodyAccJerk.meanFreq...Y, and fBodyAccJerk.meanFreq...Z: 
+- fBodyAccJerk.meanFreq...X, fBodyAccJerk.meanFreq...Y, and fBodyAccJerk.meanFreq...Z: Mean frequency of Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration derived in time on the X, Y, and Z axis
 - fBodyGyro.mean...X, fBodyGyro.mean...Y, and fBodyGyro.mean...Z: Mean Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration on the X, Y, and Z axis
 - fBodyGyro.std...X, fBodyGyro.std...Y, and fBodyGyro.std...Z: Standard deviation of the Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration on the X, Y, and Z axis
-- fBodyGyro.meanFreq...X, fBodyGyro.meanFreq...Y, and fBodyGyro.meanFreq...Z:
+- fBodyGyro.meanFreq...X, fBodyGyro.meanFreq...Y, and fBodyGyro.meanFreq...Z: Mean frequency of the Body Angular Acceleration on the X, Y, and Z axis
 - fBodyAccMag.mean..: Mean of the Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration
 - fBodyAccMag.std..: Standard deviation of the Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration
 - fBodyAccMag.meanFreq..: Mean of the Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration
 - fBodyBodyAccJerkMag.mean..: Mean of the Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration derived in time
 - fBodyBodyAccJerkMag.std..: Standard deviation of the Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration derived in time
-- fBodyBodyAccJerkMag.meanFreq..:
+- fBodyBodyAccJerkMag.meanFreq..: Mean of Fast Fourier Transform of the Euclidean norm of the Body Linear Acceleration derived in time
 - fBodyBodyGyroMag.mean..: Mean of the Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration
 - fBodyBodyGyroMag.std..: Standard deviation of the Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration
-- fBodyBodyGyroMag.meanFreq..: 
+- fBodyBodyGyroMag.meanFreq..: Mean of the Mean frequency of the Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration
 - fBodyBodyGyroJerkMag.mean..: Mean of the Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration derived in time
 - fBodyBodyGyroJerkMag.std..: Standard deviation of the Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration derived in time
-- fBodyBodyGyroJerkMag.meanFreq..:
+- fBodyBodyGyroJerkMag.meanFreq..: Mean of the Mean frequency Fast Fourier Transform of the Euclidean norm of the Body Angular Acceleration derived in time

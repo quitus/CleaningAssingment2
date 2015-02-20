@@ -31,6 +31,9 @@ labelsActivity <- read.table(file.path(home, "UCI HAR Dataset/activity_labels.tx
 labelsVariables <- unlist(labelsVariables)
 labelsActivity <- unlist(labelsActivity)
 
+# Rename the variable names to produce syntactically valid names
+labelsVariables <- make.names(labelsVariables)
+
 # Add additional labels for Subject and Activity
 labelsVariables <- c("Subject", "Activity", labelsVariables)
 
@@ -40,9 +43,6 @@ colnames(dataTrain) <- labelsVariables
 
 # Merge the test and train data frames
 dataAll <- rbind(dataTest, dataTrain)
-
-# Remove duplicated columns
-dataAll <- dataAll[, !duplicated(colnames(dataAll))]
 
 # Localize the variable subject and activity and the ones whose names contain mean and std
 selected <- c(1, 2, grep("mean|std", names(dataAll)))
